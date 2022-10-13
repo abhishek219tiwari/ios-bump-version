@@ -9,7 +9,7 @@ async function run() {
       !core.getInput("Scheme")
     ) {
       throw new Error(
-        "make sure you provided marketingVersion, project-path and scheme"
+        "make sure you provided marketingVersion, project-path and scheme ..."
       );
     }
     process.env.MARKET_VERSION = core.getInput("marketingVersion");
