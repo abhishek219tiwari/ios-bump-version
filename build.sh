@@ -9,4 +9,4 @@ if ! type fastlane > /dev/null 2>&1; then
 fi
 script_path=$(cd $(dirname ${0}); pwd)
 cp -r ${script_path}/fastlane ./
-fastlane bump
+bundle exec fastlane bump
