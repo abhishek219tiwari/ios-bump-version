@@ -1,0 +1,17 @@
+name: "iOS Bump Version"
+description: "Update iOS Version Number and Build Number"
+inputs:
+  marketingVersion:
+    description: "marketingVersion version for iOS"
+    required: false
+    default: 1.0.0
+  project-path:
+    description: "project-path"
+    required: true
+  scheme:
+    description: "Scheme"
+    required: false
+    default: ""
+runs:
+  using: "node16"
+  main: "dist/index.js"

@@ -1,0 +1,15 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Bump version number"
+  lane :bump do
+    increment_version_number_in_plist(
+ 
+     version_number: ENV['MARKET_VERSION'],   
+ 
+     xcodeproj: ENV['PROJECT_PATH'],
+   
+     scheme: ENV['SCHEME'] # or `scheme`
+    )
+  end
+end
